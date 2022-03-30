@@ -5,10 +5,9 @@ ICP based Authentication/Authorization
 ### Canister Registry
 - the service needs to send a certain amount of ICP to Subscription Canister
 
-
 ### Password Creation
 ```
-	`/subscribe
+`/subscribe
 	?service={service_ICP_address}
 	&user={user_ICP_address}
 	&username={username}
@@ -25,16 +24,12 @@ ICP based Authentication/Authorization
 
 - NOTE: username and password will likely be in the body of request
 
-
 ### Wallet Agnostic
 - user sends ICP/BTC to a services wallet
 - since ICP/BTC are public wallets you can read all transactions
 - Subscription Canister lookups all transactions for service wallet
-
 - the website using this service should only need an ICP/BTC address and call to authorize endpoint
-
 - each website will have a unique ICP/BTC address
-
 - the ICP/BTC address serves as the lookup table for username and password
 
 ### Security
